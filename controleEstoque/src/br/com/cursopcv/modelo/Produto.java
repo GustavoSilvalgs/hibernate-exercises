@@ -1,7 +1,13 @@
 package br.com.cursopcv.modelo;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "produtos")
 public class Produto {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long cod;
     private String nome;
     private String descricao;
