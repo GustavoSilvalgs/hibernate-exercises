@@ -45,4 +45,10 @@ public class Produto {
     public void setPreco(Double preco) {
         this.preco = preco;
     }
+
+    @Override
+    public String toString() {
+        return "Produto: \n" + "cod:" + cod + "\nnome: " + nome +
+                "\ndescricao: " + descricao + "\npreco: " + preco;
+    }
 }
